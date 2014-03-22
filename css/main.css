@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    /*overflow: hidden;*/
+}
+
+nav{
+  height:50px;
+  line-height: 50px;
+  padding-left: 30px;
+}
+
+nav .play{
+  font-size: 15px;
+}
+
+* {
+  user-select:none
+}
+
+.visualCodeEditor{
+  width:1024px;
+  height:768px;
+  background:#eee;
+  position: relative;
+}
+
+.options{ 
+  float:left;
+  width: 300px;
+  background: #0799ca;
+  height:768px;
+}
+
+.visualCodeEditor .options input{ 
+  display: none;
+}
+
+ul{ 
+  list-style: none;
+  padding:0;
+  margin:0; 
+}
+
+.option{ 
+    color:#fff;
+    display: block;
+    width:250px;
+    line-height: 50px;
+    border-bottom: 1px solid #fff;
+    background: #0799ca;
+    padding-left:50px;
+    border:3px solid #fff;
+}
+
+.option .dropzone{
+  background: #fff;
+  color: #000;
+}
+
+
+.option.green{
+  background: #58ca07;
+}
+
+
+
+.ghost{
+  position: absolute;
+}
+
+
+.visualCodeEditor .code{ 
+  float:left; 
+  width: 70%;
+  height:768px;
+  background:#ddd;
+}
+
+.visualCodeEditor .play{  
+  position: absolute; 
+  top:0; 
+  right:0;
+}
+
+.code_hierarchy{
+  width:550px;
+  float:left;
+  margin-left:50px;
+  margin-top:50px;
+  background: #fff;
+  line-height: 50px;
+  height:600px;
+  
+  border:1px dashed #666;
+}
+
+.code_hierarchy ul{
+  list-style: none;
+  padding:0;
+  background: #fff;
+  float:left;
+}
+
+.code_hierarchy ul ul{
+  width:100%;
+}
+
+.code_hierarchy ul span{
+  display: block;
+}
+
+.code_hierarchy ul li{
+  display: block;
+
+  line-height: 50px;
+  margin: 0;
+}
+
+.code_hierarchy .invisible{
+  opacity: 0;
+}
+
+.code_hierarchy .dropzone{
+  background: #fff;
+  color: #000;
+}
+
+.code_hierarchy .edit, .ghost .edit{
+  display: none;
+}
+
+.code_hierarchy .dropzone.active{
+
+}
+
+/*Object editor*/
+.object_editor .options.objects{
+  width:100%;
+  margin-bottom:20px;
+  height: auto;;
+}
+
+.object{
+
+  width:100px;
+  height:100px;
+  float:left;
+
+}
+
+
+
